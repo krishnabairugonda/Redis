@@ -1,2 +1,11 @@
+#build artifacts
 server/server
 client/client
+
+server/req_resp_server
+client/req_client
+
+#temp
+temp/
+
+

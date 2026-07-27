@@ -26,6 +26,7 @@ void die(const char *msg){
 static int32_t do_something(int connfd){
     char rbuf[64] = {};
     ssize_t n =read(connfd, rbuf, sizeof(rbuf)-1);
+    std::cout<<"Number of bytes read:"<<n<<std::endl;
     if(n<0){
         msg("read() error");
         return -1;
@@ -36,6 +37,7 @@ static int32_t do_something(int connfd){
     }
     std::cout<<"Client says:"<<rbuf<<std::endl;
     n = write(connfd, rbuf, strlen(rbuf));
+    std::cout<<"Number of bytes sent:"<<n<<std::endl;
     if(n<0){
         msg("write() error");
         return -1;
