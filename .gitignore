@@ -7,6 +7,17 @@ client/req_client
 
 git_cheat-sheet.pdf
 
+server/james_server.cpp
+server/james
+
+server/request_server
+
+client/another_client
+client/concc_client
+
+client/output/
+server/output/
+
 #temp
 temp/
 

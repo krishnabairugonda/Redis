@@ -24,7 +24,7 @@ void die(const char *msg){
 }
 
 static int32_t do_something(int connfd){
-    char rbuf[64] = {};
+    char rbuf[64*1024] = {};
     ssize_t n =read(connfd, rbuf, sizeof(rbuf)-1);
     std::cout<<"Number of bytes read:"<<n<<std::endl;
     if(n<0){
@@ -49,6 +49,8 @@ static int32_t do_something(int connfd){
 
     return 0;
 }
+
+
 
 int main() {
 

@@ -40,7 +40,7 @@ int main() {
     if(rv){
         die("connect()");
     }
-    // while(true){
+    while(true){
 
         // std::string txt;
         // std::cout<<"Enter the text to be sent:";
@@ -79,7 +79,7 @@ int main() {
         
         std::cout<<"Server says:"<<rbuf<<std::endl;
         
-    // }
+    }
     close(fd);
 
     return 0;

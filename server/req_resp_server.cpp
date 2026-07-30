@@ -90,6 +90,15 @@ static int32_t one_request(int connfd){
     return write_all(connfd, wbuf, len+4);
 }
 
+//accept connections
+static int acceptConn(int fd){
+    struct sockaddr_in client_addr = {};
+    socklen_t addrlen = sizeof(client_addr);
+    int connfd = accept(fd, (struct sockaddr *)&client_addr, &addrlen);
+
+    return connfd;
+}
+
 int main() {
 
     int fd = socket(AF_INET, SOCK_STREAM, 0);
