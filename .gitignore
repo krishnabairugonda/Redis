@@ -1,20 +1,7 @@
 #build artifacts
-server/server
-client/client
-
-server/req_resp_server
-client/req_client
-
 git_cheat-sheet.pdf
 
-server/james_server.cpp
-server/james
-
-server/request_server
-
-client/another_client
-client/concc_client
-
+#compiled files
 client/output/
 server/output/
 

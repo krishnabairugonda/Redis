@@ -44,7 +44,7 @@ ssize_t read_full(int connfd, uint8_t *buf, ssize_t n){
         // k += rv;
     }
 
-    std::cout<<"Number of bytes read:"<<sizeof(buf)<<std::endl;
+    // std::cout<<"Number of bytes read:"<<sizeof(buf)<<std::endl;
 
     return 0;
 }
@@ -111,7 +111,8 @@ static int32_t read_res(int connfd){
     }
 
     // std::cout<<rbuf.data()<<std::endl;
-    print(rbuf.data()+4, len);
+    // print(rbuf.data()+4, len);
+
 
     return 0;
 }
